@@ -1,0 +1,20 @@
+.car img{
+    height: 80px;
+    width: 50px;
+}
+
+.hide{
+    display: none;
+}
+
+.car{
+    position: absolute;
+    background-color: blue;
+}
+.player{
+    margin-left: 327px;
+    margin-top: -400px;
+}
+.player:hover{
+    cursor: pointer;
+}
