@@ -9,12 +9,12 @@
 
 .car{
     position: absolute;
-    background-color: blue;
+}
+.bot{
+    margin-left: 327px;
+    margin-top: -400px;
 }
 .player{
     margin-left: 327px;
     margin-top: -400px;
-}
-.player:hover{
-    cursor: pointer;
 }

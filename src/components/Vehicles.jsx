@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect} from "react";
+/* eslint-disable react/prop-types */
 import red from '../assets/redDown.png'
-import black from '../assets/black.png'
+import black from '../assets/blueDown.png'
 import '../styles/vehicles.css'
 
 
@@ -17,13 +17,11 @@ export function PlayerVehicle({reference}) {
 }
 
 
-export function BotVehicle() {
-    const [state, setState] = useState( {distance: 0, rotation: 0})
-
-    const botRef = useRef(0)
+export function BotVehicle( {reference}) {
+    const botRef = reference;
 
     return (
-        <div className="car bot" ref={botRef}>
+        <div className="car bot hide" ref={botRef}>
             <img src={black} alt="image of black car" className="vehicle" />
         </div>
     )

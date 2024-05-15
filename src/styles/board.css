@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .board{
     position: relative;
     user-select: none;
@@ -16,3 +20,100 @@
     justify-content: center;
     align-items: center;
 }
+
+.start{
+    display: flex;
+    background-image: url('../assets/racing.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.startForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 32px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
+.usernameInput{
+    padding: 8px;
+    border: none;
+    font-size: 20px;
+    width: 150px;
+}
+
+.usernameInput{
+    position: relative;
+}
+
+.usernameInput::before{
+    width: 100px;
+    content: '';
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    margin-top: 2px;
+    transition: width 0.4s ease;
+}
+.usernameInput:hover{
+    cursor: pointer;
+}
+/* .usernameInput:focus::before{
+    width: 100%;
+} */
+
+.usernameInput:focus{
+    outline: none;
+}
+
+.boxInputs{
+    display: flex;
+    gap: 15px;
+}
+
+.startForm button{
+    width: 140px;
+    height: 40px;
+    color: white;
+    background-color: #1974EC;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 21px;
+}
+
+.startForm button:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.scoreboard{
+    position: absolute;
+    font-size: 21px;
+    right: 250px;
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
