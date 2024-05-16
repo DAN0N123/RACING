@@ -105,10 +105,11 @@ body{
 
 .scoreboard{
     position: absolute;
+    top: 10%;
+    right: 5%;
     font-size: 21px;
-    right: 250px;
     box-shadow: 0px 0px 5px black;
-    width: 300px;
+    width: 15%;
     height: 100px;
     display: flex;
     flex-direction: column;
